@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Qeydiyyat səhifəsi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .qeydiyyat-hissesi {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .kenarlari {
+            display: flex;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .merkez {
+            padding: 40px;
+            width: 400px;
+        }
+
+        .merkez h1 {
+            margin-bottom: 20px;
+        }
+
+        .merkez input[type="text"],
+        .merkez input[type="email"],
+        .merkez input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 1px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .merkez input[type="checkbox"] {
+            margin-right: 10px;
+        }
+
+        .merkez input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .yeniden-parol-yazmaga {
+            margin-bottom: 20px;
+            position: relative;
+
+        }
+        .parol-yazmaga {
+            margin-bottom: 20px;
+            position: relative;
+        }
+
+        .ad-yazmaga {
+            margin-bottom: 20px;
+        }   
+        .email-yazmaga {
+            margin-bottom: 20px;
+        }
+        .qeydiyyat-sekli {
+            width: 400px;
+        }
+        .qeydiyyat-sekli img {
+            width: 100%;
+            height: auto;
+        }
+        .giris-hissesi {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .esas-movzu {
+            display: flex;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+        .metleb {
+            padding: 40px;
+            width: 400px;
+        }
+        .metleb h1 {
+            margin-bottom: 20px;
+        }
+        .metleb input[type="text"],
+        .metleb input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+        .metleb input[type="checkbox"] {
+            margin-right: 10px;
+        }
+        .metleb input[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            background-color: #007BFF;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .giris-sekli {
+            width: 400px;
+        }
+        .giris-sekli img {
+            width: 100%;
+            height: auto;
+        }
+        
+
+
+        
+    </style>
+</head>
+
+<body>
+
+    <div class="qeydiyyat-hissesi">
+        <div class="kenarlari">
+            <div class="merkez">
+                <h1>Qeydiyyat</h1>
+                <div class="ad-yazmaga">
+                    <input type="text" name="name" id="name" placeholder="Adın" />
+                </div>
+                <div class="email-yazmaga">
+                    <input type="email" name="email" id="email" placeholder="E-poçt" />
+                </div>
+                <div class="parol-yazmaga">
+                    <input type="password" name="parol" id="parol" placeholder="Parolun" />
+                </div>
+                <div class="yeniden-parol-yazmaga">
+                    <input type="password" name="yeniden_parol" id="yeniden_parol" placeholder="Parolun təkrarı" />
+                </div>
+                <div class="raziliq">
+                    <input type="checkbox" name="raziliq" id="raziliq" />
+                    <span></span><a href="#">Qaydalarla</a> razıyam
+                </div>
+                <div class="qeydiyyat-duymesi">
+                    <input type="submit" name="qeydiyyat" id="qeydiyyat" value="Qeydiyyat" />
+                </div>
+            </div>
+            <div class="qeydiyyat-sekli">
+                <img src="images/qeydiyyat-sekli.jpg" alt="qeydiyyat şəkli">
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="giris-hissesi">
+        <div class="esas-movzu">
+            <div class="metleb">
+                <h1 class="giris-yazisi">Giriş</h1>
+                <div class="ad-yazmag">
+                    <input type="text" name="senin_adin" id="senin_adin" placeholder="Adınız" />
+                </div>
+                <div class="parol-yazmag">
+                    <input type="password" name="your_parolun" id="senin_parolun" placeholder="Parol" />
+                </div>
+                <div class="meni-xatirla">
+                    <input type="checkbox" name="meni-xatirla" id="meni-xatirla" />
+                    <span><span></span></span>Məni xatırla</label>
+                </div>
+                <div class="giris-duymesi">
+                    <input type="submit" name="giris" id="giris" value="Giriş" />
+                </div>
+            </div>
+            <div class="giris-sekli">
+                <img src="images/giris-sekli.jpg" alt="giriş şəkli">
+            </div>
+        </div>
+    </div>
+
+</html>
